@@ -1,0 +1,12 @@
+<div class="main-menu">
+  <div class="header">
+    <img class="logo" src="logo/logo.png" alt="Logo" />
+  </div>
+  <div class="menu-items">
+    @for (menuItem of menuItems(); track menuItem.routerLink) {
+      <app-main-menu-item
+        [menuItem]="menuItem"
+      />
+    }
+  </div>
+</div>
