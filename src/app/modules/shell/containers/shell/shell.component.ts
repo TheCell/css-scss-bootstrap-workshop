@@ -20,7 +20,7 @@ export class ShellComponent {
       routerLink: 'home'
     },
     {
-      label: 'Exercise',
+      label: 'Exercise with longer title',
       routerLink: 'exercise'
     }
   ]
