@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { FeatureRoutes } from '../../../shared/models/feature-route.models';
 import { MenuItem } from '../../models/shell.models';
 import { HeaderComponent } from '../../presentationals/header/header.component';
 import { MainMenuComponent } from '../../presentationals/main-menu/main-menu.component';
@@ -17,11 +18,11 @@ export class ShellComponent {
   readonly menuItems: MenuItem[] = [
     {
       label: 'Home',
-      routerLink: 'home'
+      routerLink: FeatureRoutes.HOME
     },
     {
-      label: 'Exercise with longer title',
-      routerLink: 'exercise'
+      label: 'CSS - Basics',
+      routerLink: FeatureRoutes.CSS_BASICS
     }
   ]
 }
