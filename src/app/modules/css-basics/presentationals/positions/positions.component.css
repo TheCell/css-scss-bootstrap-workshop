@@ -1,0 +1,114 @@
+.container {
+  max-width: 600px;
+  min-width: 200px;
+  height: 200px;
+  border: 5px solid red;
+  padding: 40px;
+}
+
+.parent {
+  width: 70%;
+  height: 80%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 5px solid blueviolet;
+}
+
+.child {
+  align-self: center;
+  width: 30px;
+  height: 30px;
+  border: 5px solid green;
+  background-color: rgba(0, 128, 0, .5);
+}
+
+.first {
+  border: 5px solid blue;
+  background-color: rgba(0, 0, 255, .5);
+}
+
+.second {
+  border: 5px solid orange;
+  background-color: rgba(255, 165, 0, .5);
+}
+
+.third {
+  border: 5px solid deeppink;
+  background-color: rgba(255, 20, 147, .5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Solution */
+
+/*.container {*/
+/*  max-width: 600px;*/
+/*  min-width: 200px;*/
+/*  height: 200px;*/
+/*  border: 5px solid red;*/
+/*  padding: 40px;*/
+/*}*/
+
+/*.parent {*/
+/*  position: relative;*/
+/*  width: 70%;*/
+/*  height: 80%;*/
+/*  padding: 20px;*/
+/*  display: flex;*/
+/*  justify-content: center;*/
+/*  align-items: center;*/
+/*  gap: 10px;*/
+/*  border: 5px solid blueviolet;*/
+/*}*/
+
+/*.child {*/
+/*  align-self: center;*/
+/*  width: 30px;*/
+/*  height: 30px;*/
+/*  border: 5px solid green;*/
+/*  background-color: rgba(0, 128, 0, .5);*/
+/*}*/
+
+/*.first {*/
+/*  position: relative;*/
+/*  bottom: 10px;*/
+/*  right: 20px;*/
+/*  border: 5px solid blue;*/
+/*  background-color: rgba(0, 0, 255, .5);*/
+/*}*/
+
+/*.second {*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  left: 0;*/
+/*  border: 5px solid orange;*/
+/*  background-color: rgba(255, 165, 0, .5);*/
+/*}*/
+
+/*.third {*/
+/*  border: 5px solid deeppink;*/
+/*  background-color: rgba(255, 20, 147, .5);*/
+/*  position: fixed;*/
+/*  top: 0;*/
+/*  right: 0;*/
+/*}*/
