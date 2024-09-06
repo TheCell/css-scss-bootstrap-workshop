@@ -23,6 +23,10 @@ export class ShellComponent {
     {
       label: 'CSS - Basics',
       routerLink: FeatureRoutes.CSS_BASICS
+    },
+    {
+      label: 'CSS - Selectors',
+      routerLink: FeatureRoutes.CSS_SELECTORS
     }
   ]
 }
