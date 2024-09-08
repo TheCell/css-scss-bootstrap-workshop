@@ -5,7 +5,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './next-sibling-combinator.component.html',
-  styleUrl: './next-sibling-combinator.component.scss',
+  styleUrl: './next-sibling-combinator.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NextSiblingCombinatorComponent {

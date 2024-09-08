@@ -5,7 +5,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './child-combinator.component.html',
-  styleUrl: './child-combinator.component.scss',
+  styleUrl: './child-combinator.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ChildCombinatorComponent {
