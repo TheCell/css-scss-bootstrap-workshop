@@ -1,0 +1,60 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Solutions */
+
+/*table td:nth-child(odd) {*/
+/*  background-color: lightblue;*/
+/*}*/
+
+/* OR */
+
+/*table td:nth-child(2n + 1) {*/
+/*  background-color: lightblue;*/
+/*}*/

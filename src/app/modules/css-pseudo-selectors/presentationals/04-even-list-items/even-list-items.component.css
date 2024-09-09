@@ -1,0 +1,60 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Solution */
+
+/*ol li:nth-child(event) {*/
+/*  background-color: lightgray;*/
+/*}*/
+
+/* OR */
+
+/*ol li:nth-child(2n) {*/
+/*  background-color: lightgray;*/
+/*}*/
