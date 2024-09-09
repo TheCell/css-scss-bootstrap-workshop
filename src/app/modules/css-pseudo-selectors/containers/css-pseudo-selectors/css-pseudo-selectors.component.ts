@@ -25,6 +25,7 @@ import {RangeOfElementsComponent} from "../../presentationals/16-range-of-elemen
 import {
   NthElementStartingFromComponent
 } from "../../presentationals/17-nth-element-starting-from/nth-element-starting-from.component";
+import {HoverHighlightComponent} from "../../presentationals/18-hover-highlight/hover-highlight.component";
 
 @Component({
   selector: 'app-css-pseudo-selectors',
@@ -47,7 +48,8 @@ import {
     NthElementUpwardsComponent,
     NthElementDownwardsComponent,
     RangeOfElementsComponent,
-    NthElementStartingFromComponent
+    NthElementStartingFromComponent,
+    HoverHighlightComponent
   ],
   templateUrl: './css-pseudo-selectors.component.html',
   styleUrl: './css-pseudo-selectors.component.scss',

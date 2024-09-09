@@ -1,0 +1,59 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* solution */
+
+/*.grid-container .grid-item:hover + .grid-item {*/
+/*  border: 4px solid green;*/
+/*}*/
+
+/*.grid-container .grid-item:has(+ .grid-item:hover) {*/
+/*  border: 4px solid red;*/
+/*}*/
