@@ -28,6 +28,10 @@ export const routes: Routes = [
         loadChildren: () => import('./modules/css-functional-pseudo-selectors').then((feature) => feature.routes)
       },
       {
+        path: FeatureRoutes.CSS_PSEUDO_ELEMENTS,
+        loadChildren: () => import('./modules/css-pseudo-elements').then((feature) => feature.routes)
+      },
+      {
         path: '**',
         pathMatch: 'full',
         redirectTo: 'home',

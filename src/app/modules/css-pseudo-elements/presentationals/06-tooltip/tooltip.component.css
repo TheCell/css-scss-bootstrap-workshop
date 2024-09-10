@@ -1,0 +1,69 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Solution */
+
+/*button {*/
+/*  position: relative;*/
+/*}*/
+
+/*button::after {*/
+/*  content: "Tooltip Text";*/
+/*  position: absolute;*/
+/*  top: -25px;*/
+/*  left: 100%;*/
+/*  background-color: #333;*/
+/*  color: white;*/
+/*  padding: 5px;*/
+/*  display: none;*/
+/*}*/
+
+/*button:hover::after {*/
+/*  display: block;*/
+/*}*/

@@ -1,11 +1,15 @@
 .header {
   display: flex;
-  width: 100%;
+  flex: 1;
   height: 100%;
-  background-color: #504f4f;
-  align-items: center;
-  gap: 20px;
-  padding-left: 20px;
+  background-color: #bbbbbb;
+  padding: 10px 20px;
+  justify-content: flex-end;
+
+  .logo {
+    height: calc(100% - 20px);
+    width: auto;
+  }
 
   h2 {
     margin: 0;

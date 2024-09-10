@@ -35,6 +35,10 @@ export class ShellComponent {
     {
       label: 'CSS - Functional Pseudo Selectors',
       routerLink: FeatureRoutes.CSS_FUNCTIONAL_PSEUDO_SELECTORS
+    },
+    {
+      label: 'CSS - Pseudo Elements',
+      routerLink: FeatureRoutes.CSS_PSEUDO_ELEMENTS
     }
   ]
 }
