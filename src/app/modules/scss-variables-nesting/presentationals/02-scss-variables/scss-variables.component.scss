@@ -1,0 +1,270 @@
+.site-header {
+  background-color: #333333;
+  padding: 20px;
+  color: #ffffff;
+
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .main-nav ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .main-nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      background-color: #3498db;
+
+      &:hover {
+        background-color: #2980b9;
+      }
+    }
+  }
+}
+
+.content {
+  display: flex;
+  margin: 20px 0;
+
+  .post {
+    flex: 3;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-right: 20px;
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .read-more {
+      display: inline-block;
+      color: #3498db;
+      text-decoration: none;
+      padding: 10px 20px;
+      border: 1px solid #3498db;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: #3498db;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .sidebar {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+
+    h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 10px;
+
+        a {
+          color: #3498db;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.site-footer {
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Solutions */
+
+//$primary-color: #3498db;
+//$primary-dark-color: #2980b9;
+//$background-color-dark: #333333;
+//$text-color-light: #ffffff;
+//$background-color-light: #f9f9f9;
+//$sidebar-bg-color: #f4f4f4;
+//$font-size-large: 36px;
+//$font-size-medium: 28px;
+//$font-size-smaller: 20px;
+//$font-size-small: 16px;
+//$spacing-small: 10px;
+//$spacing-medium: 15px;
+//$spacing-large: 20px;
+//$border-radius: 5px;
+//
+//.site-header {
+//  background-color: $background-color-dark;
+//  padding: $spacing-large;
+//  color: $text-color-light;
+//
+//  h1 {
+//    font-size: $font-size-large;
+//    margin-bottom: $spacing-large;
+//  }
+//
+//  .main-nav ul {
+//    list-style: none;
+//    padding: 0;
+//  }
+//
+//  .main-nav ul li {
+//    display: inline-block;
+//    margin-right: $spacing-medium;
+//
+//    a {
+//      color: $text-color-light;
+//      text-decoration: none;
+//      padding: $spacing-small $spacing-medium;
+//      border-radius: $border-radius;
+//      background-color: $primary-color;
+//
+//      &:hover {
+//        background-color: $primary-dark-color;
+//      }
+//    }
+//  }
+//}
+//
+//.content {
+//  display: flex;
+//  margin: $spacing-large 0;
+//
+//  .post {
+//    flex: 3;
+//    background-color: $background-color-light;
+//    padding: $spacing-large;
+//    margin-right: $spacing-large;
+//
+//    h2 {
+//      font-size: $font-size-medium;
+//      margin-bottom: $spacing-small;
+//    }
+//
+//    p {
+//      font-size: $font-size-small;
+//      line-height: 1.6;
+//    }
+//
+//    .read-more {
+//      display: inline-block;
+//      color: $primary-color;
+//      text-decoration: none;
+//      padding: $spacing-small $spacing-large;
+//      border: 1px solid $primary-color;
+//      border-radius: $border-radius;
+//
+//      &:hover {
+//        background-color: $primary-color;
+//        color: $text-color-light;
+//      }
+//    }
+//  }
+//
+//  .sidebar {
+//    flex: 1;
+//    background-color: $sidebar-bg-color;
+//    padding: $spacing-large;
+//
+//    h3 {
+//      font-size: $font-size-smaller;
+//      margin-bottom: $spacing-small;
+//    }
+//
+//    ul {
+//      list-style: none;
+//      padding: 0;
+//
+//      li {
+//        margin-bottom: $spacing-small;
+//
+//        a {
+//          color: $primary-color;
+//          text-decoration: none;
+//
+//          &:hover {
+//            text-decoration: underline;
+//          }
+//        }
+//      }
+//    }
+//  }
+//}
+//
+//.site-footer {
+//  background-color: $background-color-dark;
+//  color: $text-color-light;
+//  text-align: center;
+//  padding: $spacing-medium;
+//}

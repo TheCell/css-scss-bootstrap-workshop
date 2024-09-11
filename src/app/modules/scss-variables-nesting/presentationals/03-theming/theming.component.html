@@ -1,0 +1,43 @@
+<h3>03 - Theming</h3>
+<p>Create a dark mode for the following section using native CSS vars. A dark-mode class is added to the <code>section</code> element</p>
+<br/>
+
+<div>
+  <label>Dark Mode</label>
+  <input type="checkbox" [checked]="isDarkMode()" (click)="toggleDarkMode()" />
+</div>
+
+<section [class.dark-mode]="isDarkMode()">
+  <header class="site-header">
+    <h1>Welcome to My Website</h1>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section class="post">
+      <h2>Post Title</h2>
+      <p>This is a sample post content.</p>
+      <a href="#" class="read-more">Read More</a>
+    </section>
+
+    <aside class="sidebar">
+      <h3>Related Posts</h3>
+      <ul>
+        <li><a href="#">Post 1</a></li>
+        <li><a href="#">Post 2</a></li>
+        <li><a href="#">Post 3</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2024 My Website</p>
+  </footer>
+</section>

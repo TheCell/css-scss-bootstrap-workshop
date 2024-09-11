@@ -32,6 +32,10 @@ export const routes: Routes = [
         loadChildren: () => import('./modules/css-pseudo-elements').then((feature) => feature.routes)
       },
       {
+        path: FeatureRoutes.SCSS_VARIABLES_NESTING,
+        loadChildren: () => import('./modules/scss-variables-nesting').then((feature) => feature.routes)
+      },
+      {
         path: '**',
         pathMatch: 'full',
         redirectTo: 'home',

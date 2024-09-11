@@ -39,6 +39,10 @@ export class ShellComponent {
     {
       label: 'CSS - Pseudo Elements',
       routerLink: FeatureRoutes.CSS_PSEUDO_ELEMENTS
+    },
+    {
+      label: 'SCSS - Variables & Nesting',
+      routerLink: FeatureRoutes.SCSS_VARIABLES_NESTING
     }
   ]
 }
