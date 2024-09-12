@@ -5,5 +5,7 @@ export enum FeatureRoutes {
   CSS_PSEUDO_SELECTORS = 'css-pseudo-selectors',
   CSS_FUNCTIONAL_PSEUDO_SELECTORS = 'css-functional-pseudo-selectors',
   CSS_PSEUDO_ELEMENTS = 'css-pseudo-elements',
-  SCSS_VARIABLES_NESTING = 'scss-variables-nesting'
+  SCSS_VARIABLES_NESTING = 'scss-variables-nesting',
+  SCSS_MIXINS = 'scss-mixins',
+  SCSS_FUNCTIONS = 'scss-functions'
 }

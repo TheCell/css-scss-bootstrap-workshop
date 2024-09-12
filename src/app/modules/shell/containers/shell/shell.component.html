@@ -1,5 +1,4 @@
 <app-shell-layout>
-  <app-header slot="header" />
-  <app-main-menu [menuItems]="menuItems" slot="main-menu" />
+  <app-main-menu [menuItems]="menuItems" (logoClicked)="onLogoClicked()" slot="main-menu" />
   <router-outlet />
 </app-shell-layout>

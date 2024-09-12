@@ -1,0 +1,69 @@
+@mixin hide-text-overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.container {
+  width: 50%;
+  border: 2px solid purple;
+
+  .first-paragraph {
+    @include hide-text-overflow
+  }
+
+  .second-paragraph {
+    @include hide-text-overflow
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Solution */
+
+//@mixin hide-text-overflow($overflow-style) {
+//  overflow: hidden;
+//  white-space: nowrap;
+//  text-overflow: $overflow-style;
+//}
+//
+//.container {
+//  width: 50%;
+//  border: 2px solid purple;
+//
+//  .first-paragraph {
+//    @include hide-text-overflow(ellipsis)
+//  }
+//
+//  .second-paragraph {
+//    @include hide-text-overflow(clip)
+//  }
+//}

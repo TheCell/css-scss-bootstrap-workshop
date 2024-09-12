@@ -1,0 +1,112 @@
+$small-container-width: 400px;
+$small-container-height: 200px;
+$big-container-width: 600px;
+$big-container-height: 300px;
+
+@mixin container($size) {
+  @if($size == small) {
+    width: $small-container-width;
+    height: $small-container-height;
+  } @else if($size == big) {
+    width: $big-container-width;
+    height: $big-container-height;
+  }
+}
+
+@function calculate-container-margin($container-size) {
+  @if ($container-size == small) {
+    @return calc($small-container-height * 0.2) 0 0 calc($small-container-width * 0.4);
+  } @else if ($container-size == big) {
+    @return calc($big-container-height * 0.5) 0 0 calc($big-container-width * 0.7);
+  }
+}
+
+.container-small {
+  @include container(small);
+  border: 2px solid green;
+  margin-bottom: 20px;
+
+  .block {
+    width: 50px;
+    height: 50px;
+    border: 2px solid red;
+    background-color: lighten(red, 40);
+    margin: calculate-container-margin(small);
+  }
+}
+
+.container-big {
+  @include container(big);
+  border: 2px solid orange;
+
+  .circle {
+    width: 100px;
+    height: 100px;
+    border: 2px solid purple;
+    border-radius: 50%;
+    background-color: lighten(purple, 70);
+    margin: calculate-container-margin(big);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Solution */
+
+//@function calculate-container-margin($container-size) {
+//  @if ($container-size != big and $container-size != small) {
+//    @error "Container-size property #{$container-size} must be `big` or `small`"
+//  }
+//
+//  @if ($container-size == small) {
+//    @return calc($small-container-height * 0.2) 0 0 calc($small-container-width * 0.4);
+//  }
+//
+//  @return calc($big-container-height * 0.5) 0 0 calc($big-container-width * 0.7);
+//}

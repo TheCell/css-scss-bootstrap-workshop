@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input, output } from '@angular/core';
 import { MenuItem } from '../../models/shell.models';
 import { MainMenuItemComponent } from '../main-menu-item/main-menu-item.component';
 
@@ -14,4 +14,10 @@ import { MainMenuItemComponent } from '../main-menu-item/main-menu-item.componen
 })
 export class MainMenuComponent {
   menuItems = input.required<MenuItem[]>();
+
+  logoClicked = output<void>();
+
+  onLogoClick(): void {
+    this.logoClicked.emit();
+  }
 }

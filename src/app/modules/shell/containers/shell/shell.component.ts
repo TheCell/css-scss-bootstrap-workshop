@@ -1,25 +1,22 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { Router, RouterOutlet } from '@angular/router';
 import { FeatureRoutes } from '../../../shared/models/feature-route.models';
 import { MenuItem } from '../../models/shell.models';
-import { HeaderComponent } from '../../presentationals/header/header.component';
 import { MainMenuComponent } from '../../presentationals/main-menu/main-menu.component';
 import { ShellLayoutComponent } from '../../presentationals/shell-layout/shell-layout.component';
 
 @Component({
   selector: 'app-shell',
   standalone: true,
-  imports: [ShellLayoutComponent, HeaderComponent, RouterOutlet, MainMenuComponent],
+  imports: [ShellLayoutComponent, RouterOutlet, MainMenuComponent],
   templateUrl: './shell.component.html',
   styleUrl: './shell.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ShellComponent {
+  private readonly router = inject(Router);
+
   readonly menuItems: MenuItem[] = [
-    {
-      label: 'Home',
-      routerLink: FeatureRoutes.HOME
-    },
     {
       label: 'CSS - Basics',
       routerLink: FeatureRoutes.CSS_BASICS
@@ -43,6 +40,18 @@ export class ShellComponent {
     {
       label: 'SCSS - Variables & Nesting',
       routerLink: FeatureRoutes.SCSS_VARIABLES_NESTING
+    },
+    {
+      label: 'SCSS - Mixins',
+      routerLink: FeatureRoutes.SCSS_MIXINS
+    },
+    {
+      label: 'SCSS - Functions',
+      routerLink: FeatureRoutes.SCSS_FUNCTIONS
     }
   ]
+
+  onLogoClicked(): void {
+    this.router.navigate([FeatureRoutes.HOME])
+  }
 }

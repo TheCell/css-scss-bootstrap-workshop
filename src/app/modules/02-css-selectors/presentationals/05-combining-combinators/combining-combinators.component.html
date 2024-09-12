@@ -1,0 +1,56 @@
+<h3>05 - Combining Combinator</h3>
+
+<ol>
+  <li>Change the background color of any <code>p.text</code> element that is a sibling of an <code>h6</code> element within the <code>.content</code> section to yellow. The <code>p.text</code> must be the immediate sibling of the <code>h6</code> to apply the background color</li>
+  <li>Change the color of the first <code>p.text</code> in each <code>.content</code> section to <code>red</code> only if its the direct child of <code>.content</code> and followed by a sibling <code>p.text</code> that contains the class <code>.important</code></li>
+</ol>
+<br/>
+
+<div class="container">
+  <header>
+    <h5 class="title">Welcome to Combining Combinator Practice</h5>
+    <nav class="navigation">
+      <ul>
+        <li class="nav-item">Home</li>
+        <li class="nav-item">About</li>
+        <li class="nav-item">Contact</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="content">
+      <h6>Section 1</h6>
+      <p class="text">First paragraph in Section 1.</p>
+      <p class="text important">Red paragraph in Section 1.</p>
+    </section>
+
+    <section class="content">
+      <h6>Section 2</h6>
+      <p class="text">First paragraph in Section 2.</p>
+      <p class="text">Second paragraph in Section 2.</p>
+    </section>
+
+    <section class="content">
+      <h6>Section 3</h6>
+      <p class="text">First paragraph in Section 3.</p>
+      <p class="important">Red paragraph in Section 3.</p>
+    </section>
+
+    <section class="content">
+      <h6>Section 4</h6>
+      <p class="text">First paragraph in Section 4.</p>
+      <!-- No second paragraph here -->
+    </section>
+
+    <section class="not-content">
+      <h6>Section 5</h6>
+      <p class="text">First paragraph in Section 5.</p>
+      <p class="important">Second paragraph in Section 5.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Footer information</p>
+  </footer>
+</div>

@@ -1,6 +1,6 @@
 <div class="main-menu">
   <div class="header">
-    <img class="logo" src="logo/logo.png" alt="Logo" />
+    <img class="logo" src="logo/logo.png" alt="Logo" (click)="onLogoClick()" />
   </div>
   <div class="menu-items">
     @for (menuItem of menuItems(); track menuItem.routerLink) {

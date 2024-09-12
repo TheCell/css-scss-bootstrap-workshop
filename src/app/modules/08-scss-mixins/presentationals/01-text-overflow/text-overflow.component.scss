@@ -1,0 +1,72 @@
+.container {
+  width: 50%;
+  border: 2px solid purple;
+
+  .text {
+    white-space: nowrap;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Solution */
+
+//@mixin hide-text-overflow {
+//  white-space: nowrap;
+//  overflow: hidden;
+//  text-overflow: ellipsis;
+//}
+//
+//.container {
+//  width: 50%;
+//  border: 2px solid purple;
+//
+//  .text {
+//    @include hide-text-overflow;
+//  }
+//}

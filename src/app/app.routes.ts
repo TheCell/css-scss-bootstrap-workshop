@@ -13,27 +13,35 @@ export const routes: Routes = [
       },
       {
         path: FeatureRoutes.CSS_BASICS,
-        loadChildren: () => import('./modules/css-basics').then((feature) => feature.routes)
+        loadChildren: () => import('./modules/01-css-basics').then((feature) => feature.routes)
       },
       {
         path: FeatureRoutes.CSS_SELECTORS,
-        loadChildren: () => import('./modules/css-selectors').then((feature) => feature.routes)
+        loadChildren: () => import('./modules/02-css-selectors').then((feature) => feature.routes)
       },
       {
         path: FeatureRoutes.CSS_PSEUDO_SELECTORS,
-        loadChildren: () => import('./modules/css-pseudo-selectors').then((feature) => feature.routes)
+        loadChildren: () => import('./modules/04-css-pseudo-selectors').then((feature) => feature.routes)
       },
       {
         path: FeatureRoutes.CSS_FUNCTIONAL_PSEUDO_SELECTORS,
-        loadChildren: () => import('./modules/css-functional-pseudo-selectors').then((feature) => feature.routes)
+        loadChildren: () => import('./modules/05-css-functional-pseudo-selectors').then((feature) => feature.routes)
       },
       {
         path: FeatureRoutes.CSS_PSEUDO_ELEMENTS,
-        loadChildren: () => import('./modules/css-pseudo-elements').then((feature) => feature.routes)
+        loadChildren: () => import('./modules/06-css-pseudo-elements').then((feature) => feature.routes)
       },
       {
         path: FeatureRoutes.SCSS_VARIABLES_NESTING,
-        loadChildren: () => import('./modules/scss-variables-nesting').then((feature) => feature.routes)
+        loadChildren: () => import('./modules/07-scss-variables-nesting').then((feature) => feature.routes)
+      },
+      {
+        path: FeatureRoutes.SCSS_MIXINS,
+        loadChildren: () => import('./modules/08-scss-mixins').then((feature) => feature.routes)
+      },
+      {
+        path: FeatureRoutes.SCSS_FUNCTIONS,
+        loadChildren: () => import('./modules/09-scss-functions').then((feature) => feature.routes)
       },
       {
         path: '**',
