@@ -44,6 +44,10 @@ export const routes: Routes = [
         loadChildren: () => import('./modules/08-scss-functions').then((feature) => feature.routes)
       },
       {
+        path: FeatureRoutes.SCSS_PARTIALS,
+        loadChildren: () => import('./modules/09-scss-partials').then((feature) => feature.routes)
+      },
+      {
         path: '**',
         pathMatch: 'full',
         redirectTo: 'home',

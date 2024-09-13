@@ -1,0 +1,57 @@
+// Variables
+$primary-color: #ff6f61;
+$secondary-color: #333;
+$card-bg-color: #fff;
+$card-padding: 20px;
+$footer-bg: #222;
+$section-bg-color: #f4f4f9;
+
+// Mixins
+@mixin box-shadow($h-offset, $v-offset, $blur, $spread, $color) {
+  box-shadow: $h-offset $v-offset $blur $spread $color;
+}
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+// Functions
+@function darken-color($color, $amount) {
+  @return darken($color, $amount);
+}
+
+section {
+  background-color: $section-bg-color;
+
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+
+    .card {
+      background-color: $card-bg-color;
+      padding: $card-padding;
+      color: $secondary-color;
+      @include box-shadow(0px, 4px, 10px, 0px, rgba(0, 0, 0, 0.1));
+      @include border-radius(10px);
+
+      .card-title {
+        font-size: 24px;
+        color: $primary-color;
+      }
+
+      .card-text {
+        font-size: 16px;
+        color: $secondary-color;
+      }
+    }
+  }
+
+  .footer {
+    background-color: $footer-bg;
+    color: $card-bg-color;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,62 @@
+$primary-color: #3498db;
+$secondary-color: #116a33;
+$font-size-large: 24px;
+$font-size-medium: 18px;
+$font-size-small: 14px;
+
+@mixin center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  background-color: $primary-color;
+  color: white;
+  padding: 20px;
+  text-align: center;
+
+  h1 {
+    font-size: $font-size-large;
+  }
+
+  .nav {
+    margin-top: 10px;
+
+    a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  }
+}
+
+.hero {
+  background-color: $secondary-color;
+  color: white;
+  padding: 50px;
+
+  h2 {
+    font-size: $font-size-large;
+  }
+
+  p {
+    font-size: $font-size-medium;
+  }
+
+  .btn-primary {
+    background-color: $primary-color;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: $font-size-small;
+  }
+}
+
+.footer {
+  @include center-content;
+  background-color: $primary-color;
+  color: white;
+  padding: 10px;
+}

@@ -48,6 +48,10 @@ export class ShellComponent {
     {
       label: 'SCSS - Functions',
       routerLink: FeatureRoutes.SCSS_FUNCTIONS
+    },
+    {
+      label: 'SCSS - Partials',
+      routerLink: FeatureRoutes.SCSS_PARTIALS
     }
   ]
 
