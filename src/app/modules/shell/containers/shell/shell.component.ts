@@ -55,7 +55,11 @@ export class ShellComponent {
     },
     {
       label: 'Layout - Media Queries',
-      routerLink: FeatureRoutes.LAyOUT_MEDIA_QUERIES
+      routerLink: FeatureRoutes.LAYOUT_MEDIA_QUERIES
+    },
+    {
+      label: 'Bootstrap',
+      routerLink: FeatureRoutes.BOOTSTRAP
     }
   ]
 

@@ -9,5 +9,6 @@ export enum FeatureRoutes {
   SCSS_MIXINS = 'scss-mixins',
   SCSS_FUNCTIONS = 'scss-functions',
   SCSS_PARTIALS = 'scss-partials',
-  LAyOUT_MEDIA_QUERIES = 'layout-media-queries'
+  LAYOUT_MEDIA_QUERIES = 'layout-media-queries',
+  BOOTSTRAP = 'bootstrap',
 }

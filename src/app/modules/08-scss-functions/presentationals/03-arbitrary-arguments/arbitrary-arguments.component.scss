@@ -4,7 +4,7 @@ $inputs: 20px, 50px, 100px, 5px, 10px;
   @return $a + $b;
 }
 
-.container {
+.block {
   width: sum(50px, 30px); // pass $input variable
   height: 50px;
   border: 2px solid green;
