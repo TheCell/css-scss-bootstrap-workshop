@@ -8,5 +8,6 @@ export enum FeatureRoutes {
   SCSS_VARIABLES_NESTING = 'scss-variables-nesting',
   SCSS_MIXINS = 'scss-mixins',
   SCSS_FUNCTIONS = 'scss-functions',
-  SCSS_PARTIALS = 'scss-partials'
+  SCSS_PARTIALS = 'scss-partials',
+  LAyOUT_MEDIA_QUERIES = 'layout-media-queries'
 }

@@ -1,0 +1,57 @@
+<h3>01 - Responsive Media Query Layout</h3>
+<p>
+  Create a responsive layout for the screen breakpoints <code>768px</code>, <code>1024px</code>, <code>1280px</code><br/>
+  Create a mixin that calculates a flex-item width based on the amount of flex items and the gap size. (Alternatively just use <code>size - gap-size</code>, e.g. 20% - 20px)<br/>
+  Make the Flex container hold the following amount of elements on a single line
+</p>
+<table>
+  <th>Size</th>
+  <th># of elements</th>
+  <tr>
+    <td>< 768px</td>
+    <td>1 Element</td>
+  </tr>
+  <tr>
+    <td>< 1024px</td>
+    <td>2 Elements</td>
+  </tr>
+  <tr>
+    <td>< 1280px</td>
+    <td>3 Elements</td>
+  </tr>
+  <tr>
+    <td>>= 1280px</td>
+    <td>4 Element</td>
+  </tr>
+</table>
+<br/>
+<p>
+  Make the Grid have 1 column when size < 768, 2 when size < 1024 and 3 when size >= 1024
+</p>
+<br/>
+
+<section>
+  <div>
+    <h6>This is a Flex Container</h6>
+    <div class="flex-container">
+      <div class="flex-item"></div>
+      <div class="flex-item"></div>
+      <div class="flex-item"></div>
+      <div class="flex-item"></div>
+      <div class="flex-item"></div>
+      <div class="flex-item"></div>
+    </div>
+
+    <br/>
+
+    <h6>This is a Grid</h6>
+    <div class="grid-container">
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+    </div>
+  </div>
+</section>

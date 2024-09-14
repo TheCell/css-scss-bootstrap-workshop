@@ -48,6 +48,10 @@ export const routes: Routes = [
         loadChildren: () => import('./modules/09-scss-partials').then((feature) => feature.routes)
       },
       {
+        path: FeatureRoutes.LAyOUT_MEDIA_QUERIES,
+        loadChildren: () => import('./modules/10-layout-media-queries').then((feature) => feature.routes)
+      },
+      {
         path: '**',
         pathMatch: 'full',
         redirectTo: 'home',

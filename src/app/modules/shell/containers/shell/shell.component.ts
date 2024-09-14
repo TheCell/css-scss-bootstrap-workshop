@@ -52,6 +52,10 @@ export class ShellComponent {
     {
       label: 'SCSS - Partials',
       routerLink: FeatureRoutes.SCSS_PARTIALS
+    },
+    {
+      label: 'Layout - Media Queries',
+      routerLink: FeatureRoutes.LAyOUT_MEDIA_QUERIES
     }
   ]
 

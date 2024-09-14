@@ -1,0 +1,12 @@
+<h3>Responsive Container Query Layout</h3>
+<p>
+  Make adjustments to the grid styling based on the grid container size.<br/>
+  container-size < 500px grid-item borders are red, container-size < 1000px grid-item borders are green, container-size >= 1000px grid-item borders are orange
+</p>
+<br/>
+
+<h6>Width: {{ gridContainerWidth() | number: '1.0-0' }}</h6>
+  <div #container class="grid-container">
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+  </div>
