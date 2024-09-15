@@ -11,4 +11,5 @@ export enum FeatureRoutes {
   SCSS_PARTIALS = 'scss-partials',
   LAYOUT_MEDIA_QUERIES = 'layout-media-queries',
   BOOTSTRAP = 'bootstrap',
+  ANGULAR_STYLING = 'angular-styling',
 }

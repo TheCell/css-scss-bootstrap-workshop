@@ -1,0 +1,9 @@
+.list {
+  width: 80%;
+
+  .item {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+}

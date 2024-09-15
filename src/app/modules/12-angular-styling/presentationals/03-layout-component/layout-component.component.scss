@@ -1,0 +1,52 @@
+.header {
+  background-color: #3498db;
+  color: white;
+  padding: 20px;
+  text-align: center;
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .nav {
+    margin-top: 10px;
+
+    a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  }
+}
+
+.hero {
+  background-color: #116a33;
+  color: white;
+  padding: 50px;
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .btn-primary {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+  }
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+}

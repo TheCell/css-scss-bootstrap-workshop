@@ -60,6 +60,10 @@ export class ShellComponent {
     {
       label: 'Bootstrap',
       routerLink: FeatureRoutes.BOOTSTRAP
+    },
+    {
+      label: 'Angular Styling',
+      routerLink: FeatureRoutes.ANGULAR_STYLING
     }
   ]
 

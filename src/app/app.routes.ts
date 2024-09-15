@@ -56,6 +56,10 @@ export const routes: Routes = [
         loadChildren: () => import('./modules/11-bootstrap').then((feature) => feature.routes)
       },
       {
+        path: FeatureRoutes.ANGULAR_STYLING,
+        loadChildren: () => import('./modules/12-angular-styling').then((feature) => feature.routes)
+      },
+      {
         path: '**',
         pathMatch: 'full',
         redirectTo: 'home',

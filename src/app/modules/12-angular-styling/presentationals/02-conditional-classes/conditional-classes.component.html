@@ -1,0 +1,13 @@
+<h3>02 - Conditional Classes</h3>
+<p>Create a <code>highlight</code> class that sets the background to a different color. Apply it to every second list entry. Use Angular's <code>$index</code>, <code>$odd</code> or <code>$even</code> variables</p>
+<br/>
+<div class="list">
+  @for (item of items; track item) {
+    <div class="item">
+      <div>{{ $index + 1 }}</div>
+      <div>{{ item.name }}</div>
+      <div>{{ item.city }}</div>
+      <div>{{ item.dateOfBirth }}</div>
+    </div>
+  }
+</div>

@@ -1,0 +1,11 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.box {
+  width: 50%;
+  height: 150px;
+  border: 2px solid darkmagenta;
+}
