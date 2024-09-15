@@ -3,6 +3,10 @@
   align-items: center;
   margin: 5px 0;
   width: 100%;
+
+  &:first-child {
+    margin-top: 20px;
+  }
 }
 
 .menu-item {
