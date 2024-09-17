@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SubsequentSiblingCombinatorComponent } from './subsequent-sibling-combinator.component';
 
-describe('SubsequentSiblingCombinatorComponent', () => {
+describe('NextSiblingCombinatorComponent', () => {
   let component: SubsequentSiblingCombinatorComponent;
   let fixture: ComponentFixture<SubsequentSiblingCombinatorComponent>;
 

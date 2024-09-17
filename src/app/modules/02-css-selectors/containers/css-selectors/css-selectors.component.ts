@@ -7,11 +7,11 @@ import {
 } from '../../presentationals/01-descendant-combinator/descendant-combinator.component';
 import { ChildCombinatorComponent } from '../../presentationals/02-child-combinator/child-combinator.component';
 import {
-  NextSiblingCombinatorComponent
-} from '../../presentationals/03-next-sibling-combinator/next-sibling-combinator.component';
-import {
   SubsequentSiblingCombinatorComponent
-} from '../../presentationals/04-subsequent-sibling-combinator/subsequent-sibling-combinator.component';
+} from '../../presentationals/04-next-sibling-combinator/subsequent-sibling-combinator.component';
+import {
+  NextSiblingCombinatorComponent
+} from '../../presentationals/03-subsequent-sibling-combinator/next-sibling-combinator.component';
 import {
   CombiningCombinatorsComponent
 } from '../../presentationals/05-combining-combinators/combining-combinators.component';
@@ -24,8 +24,8 @@ import {
     DescendantCombinatorComponent,
     ChildCombinatorComponent,
     NextSiblingCombinatorComponent,
-    SubsequentSiblingCombinatorComponent,
-    CombiningCombinatorsComponent
+    CombiningCombinatorsComponent,
+    SubsequentSiblingCombinatorComponent
   ],
   templateUrl: './css-selectors.component.html',
   styleUrl: './css-selectors.component.scss',
