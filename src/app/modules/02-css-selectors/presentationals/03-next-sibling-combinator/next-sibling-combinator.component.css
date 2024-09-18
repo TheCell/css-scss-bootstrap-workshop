@@ -1,4 +1,6 @@
-
+.content > p ~ p {
+  font-style: italic;
+}
 
 
 

@@ -1,6 +1,10 @@
+.content > h6 ~ p {
+  color: yellow;
+}
 
-
-
+.content > p:nth-child(-1) + p.important {
+  color: red;
+}
 
 
 
