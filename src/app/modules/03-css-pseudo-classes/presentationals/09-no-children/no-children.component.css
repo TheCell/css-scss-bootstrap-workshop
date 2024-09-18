@@ -3,6 +3,10 @@ div {
   height: 20px;
 }
 
+div:empty {
+  border: 1px solid green;
+}
+
 
 
 

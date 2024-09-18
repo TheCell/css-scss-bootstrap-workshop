@@ -1,4 +1,6 @@
-
+li:nth-child(n + 3):nth-child(-n + 7) {
+  color: red;
+}
 
 
 

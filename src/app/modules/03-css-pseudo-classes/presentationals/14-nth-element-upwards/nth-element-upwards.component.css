@@ -1,4 +1,6 @@
-
+li:nth-child(n + 6) {
+  background-color: lightgray;
+}
 
 
 

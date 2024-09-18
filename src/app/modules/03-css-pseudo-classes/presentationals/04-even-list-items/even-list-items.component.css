@@ -1,4 +1,6 @@
-
+ol li:nth-child(even) {
+  background-color: lightgray;
+}
 
 
 

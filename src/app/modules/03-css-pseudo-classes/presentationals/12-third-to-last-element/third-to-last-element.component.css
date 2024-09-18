@@ -1,4 +1,6 @@
-
+li:nth-last-child(3) {
+  color: green;
+}
 
 
 

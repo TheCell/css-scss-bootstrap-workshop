@@ -1,4 +1,6 @@
-
+table td:nth-child(odd) {
+  background-color: lightblue;
+}
 
 
 

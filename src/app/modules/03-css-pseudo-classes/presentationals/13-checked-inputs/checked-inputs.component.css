@@ -2,7 +2,9 @@ input {
   margin-right: 10px;
 }
 
-
+input:checked {
+  outline: 2px solid red;
+}
 
 
 

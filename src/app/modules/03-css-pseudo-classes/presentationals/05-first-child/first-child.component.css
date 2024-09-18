@@ -1,4 +1,6 @@
-
+div > :first-child {
+  color: blue;
+}
 
 
 
