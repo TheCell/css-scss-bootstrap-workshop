@@ -1,4 +1,20 @@
+button {
+  position: relative;
+}
 
+button::after {
+  content: "Tooltip Text";
+  position: absolute;
+  top: -2rem;
+  background-color: #333;
+  color: white;
+  padding: 5px;
+  display: none;
+}
+
+button:hover::after {
+  display: block;
+}
 
 
 

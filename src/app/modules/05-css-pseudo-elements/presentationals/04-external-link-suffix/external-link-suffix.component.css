@@ -1,4 +1,6 @@
-
+a.external-link::after {
+  content: '↗';
+}
 
 
 

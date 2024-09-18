@@ -1,4 +1,7 @@
-
+section ::selection {
+  background-color: green;
+  color: white;
+}
 
 
 
