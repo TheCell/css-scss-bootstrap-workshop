@@ -15,6 +15,7 @@
   margin-top: 20px;
   padding: 10px;
   border: 10px solid green;
+  box-sizing: content-box;
 }
 
 
