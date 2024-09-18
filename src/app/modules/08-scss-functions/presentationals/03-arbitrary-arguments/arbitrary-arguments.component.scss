@@ -1,11 +1,16 @@
 $inputs: 20px, 50px, 100px, 5px, 10px;
 
-@function sum($a, $b) {
-  @return $a + $b;
+@function sum($numbers...) {
+  $sum: 0;
+  @each $number in $numbers {
+    $sum: $sum + $number;
+  }
+
+  @return $sum;
 }
 
 .block {
-  width: sum(50px, 30px); // pass $input variable
+  width: sum($inputs); // pass $input variable
   height: 50px;
   border: 2px solid green;
 }

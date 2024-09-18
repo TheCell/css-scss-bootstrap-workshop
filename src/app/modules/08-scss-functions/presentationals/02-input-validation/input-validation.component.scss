@@ -14,6 +14,10 @@ $big-container-height: 300px;
 }
 
 @function calculate-container-margin($container-size) {
+  @if ($container-size != big and $container-size != small) {
+    @error "Container-size property #{$container-size} must be `big` or `small`";
+  }
+
   @if ($container-size == small) {
     @return calc($small-container-height * 0.2) 0 0 calc($small-container-width * 0.4);
   } @else if ($container-size == big) {

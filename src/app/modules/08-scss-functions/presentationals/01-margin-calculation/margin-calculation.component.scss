@@ -3,6 +3,14 @@ $small-container-height: 200px;
 $big-container-width: 600px;
 $big-container-height: 300px;
 
+@function calculate-container-margin($container-size) {
+  @if ($container-size == small) {
+    @return calc($small-container-height * 0.2) 0 0 calc($small-container-width * 0.4);
+  } @else if ($container-size == big) {
+    @return calc($big-container-height * 0.5) 0 0 calc($big-container-width * 0.7);
+  }
+}
+
 @mixin container($size) {
   @if($size == small) {
     width: $small-container-width;
@@ -23,6 +31,7 @@ $big-container-height: 300px;
     height: 50px;
     border: 2px solid red;
     background-color: lighten(red, 40);
+    margin: calculate-container-margin(small);
   }
 }
 
@@ -36,6 +45,7 @@ $big-container-height: 300px;
     border: 2px solid purple;
     border-radius: 50%;
     background-color: lighten(purple, 70);
+    margin: calculate-container-margin(big);
   }
 }
 
