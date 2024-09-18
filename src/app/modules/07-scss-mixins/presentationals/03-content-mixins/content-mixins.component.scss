@@ -1,9 +1,15 @@
+@mixin enabled-button {
+  button:not([disabled]):hover {
+    @content
+  }
+}
+
 .button-container {
   display: flex;
   gap: 20px;
 
   // Replace this selector with a mixin. The styling properties stay the same
-  button:hover {
+  @include enabled-button {
     background-color: #3d3d3d;
     color: white;
   }

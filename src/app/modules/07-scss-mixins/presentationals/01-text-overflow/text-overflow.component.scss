@@ -1,9 +1,17 @@
+@mixin hide-text-overflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .overflow-container {
   width: 50%;
   border: 2px solid purple;
 
   .text {
     white-space: nowrap;
+
+    @include hide-text-overflow;
   }
 }
 
