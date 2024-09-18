@@ -3,7 +3,9 @@ div {
   gap: 5px;
 }
 
-
+section :is(input[type="radio"], input[type="checkbox"], input[type="text"]):is(:focus, :checked) {
+  outline: 2px solid red;
+}
 
 
 

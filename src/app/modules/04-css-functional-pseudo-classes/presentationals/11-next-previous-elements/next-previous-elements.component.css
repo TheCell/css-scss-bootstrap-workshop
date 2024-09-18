@@ -12,6 +12,14 @@
   display: block;
 }
 
+.grid-container .grid-item:hover + .grid-item {
+  border: 4px solid green;
+}
+
+.grid-container .grid-item:has(+ .grid-item:hover) {
+  border: 4px solid red;
+}
+
 
 
 

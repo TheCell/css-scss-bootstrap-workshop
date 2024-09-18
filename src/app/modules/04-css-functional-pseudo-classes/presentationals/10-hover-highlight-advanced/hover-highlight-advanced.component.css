@@ -12,13 +12,8 @@
   display: block;
 }
 
-/* Remove these selectors and write them as one */
-.grid-container:hover img {
+.grid-container:has(img:hover) img:not(:hover) {
   opacity: .5;
-}
-
-.grid-container img:hover {
-  opacity: 1;
 }
 
 

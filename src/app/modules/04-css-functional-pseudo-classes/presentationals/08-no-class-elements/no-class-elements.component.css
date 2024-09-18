@@ -1,4 +1,6 @@
-
+a:not([class]) {
+  color: green;
+}
 
 
 

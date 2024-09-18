@@ -1,4 +1,6 @@
-
+section :is(p, span):not(:nth-child(1)) {
+  font-weight: bold;
+}
 
 
 

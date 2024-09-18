@@ -12,7 +12,9 @@
   display: block;
 }
 
-
+.grid-item:has(img[alt="avatar"]) {
+  border: 2px solid red;
+}
 
 
 

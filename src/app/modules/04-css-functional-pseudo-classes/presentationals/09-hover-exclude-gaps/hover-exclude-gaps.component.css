@@ -12,6 +12,9 @@
   display: block;
 }
 
+.grid-container:has(img:hover) img {
+  opacity: .5;
+}
 
 
 
