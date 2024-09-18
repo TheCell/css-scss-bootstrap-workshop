@@ -2,7 +2,7 @@
   color: yellow;
 }
 
-.content > p:nth-child(-1) + p.important {
+.content > p + p.important {
   color: red;
 }
 
