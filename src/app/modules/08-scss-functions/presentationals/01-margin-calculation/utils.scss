@@ -1,0 +1,22 @@
+$small-container-width: 400px;
+$small-container-height: 200px;
+$big-container-width: 600px;
+$big-container-height: 300px;
+
+@function calculate-container-margin($container-size) {
+  @if ($container-size == small) {
+    @return calc($small-container-height * 0.2) 0 0 calc($small-container-width * 0.4);
+  } @else if ($container-size == big) {
+    @return calc($big-container-height * 0.5) 0 0 calc($big-container-width * 0.7);
+  }
+}
+
+@mixin container($size) {
+  @if($size == small) {
+    width: $small-container-width;
+    height: $small-container-height;
+  } @else if($size == big) {
+    width: $big-container-width;
+    height: $big-container-height;
+  }
+}

@@ -1,0 +1,13 @@
+@use './_variables.scss' as var;
+
+@function calculate-container-margin($container-size) {
+  @if ($container-size != big and $container-size != small) {
+    @error "Container-size property #{$container-size} must be `big` or `small`";
+  }
+
+  @if ($container-size == small) {
+    @return calc(var.$small-container-height * 0.2) 0 0 calc(var.$small-container-width * 0.4);
+  } @else if ($container-size == big) {
+    @return calc(var.$big-container-height * 0.5) 0 0 calc(var.$big-container-width * 0.7);
+  }
+}

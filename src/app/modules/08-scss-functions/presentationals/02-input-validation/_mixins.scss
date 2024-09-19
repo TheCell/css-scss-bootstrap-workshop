@@ -1,0 +1,11 @@
+@use './_variables.scss' as var;
+
+@mixin container($size) {
+  @if($size == small) {
+    width: var.$small-container-width;
+    height: var.$small-container-height;
+  } @else if($size == big) {
+    width: var.$big-container-width;
+    height: var.$big-container-height;
+  }
+}
