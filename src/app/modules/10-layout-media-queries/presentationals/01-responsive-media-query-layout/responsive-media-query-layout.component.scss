@@ -1,4 +1,15 @@
+@use './mixins.scss' as mixins;
+
 $gap: 20px;
+
+@mixin flex-item-width($itemsAmount, $gap) {
+  $flex-item-width: 100% / $itemsAmount;
+  $flex-gaps: $itemsAmount - 1;
+  $total-gap: $flex-gaps * $gap;
+  $offset: $total-gap / $itemsAmount;
+
+  width: calc($flex-item-width - $offset);
+}
 
 .flex-container {
   display: flex;
@@ -14,7 +25,24 @@ $gap: 20px;
     box-sizing: border-box;
     height: 150px;
     border: 2px solid darkgoldenrod;
-    width: calc(50% - 10px);
+
+    @include flex-item-width(1, $gap);
+
+    @include mixins.for-xl-screens {
+      @include flex-item-width(4, $gap);
+    }
+
+    @include mixins.for-l-screens {
+      @include flex-item-width(3, $gap);
+    }
+
+    @include mixins.for-m-screens {
+      @include flex-item-width(2, $gap);
+    }
+
+    @include mixins.for-s-screens {
+      @include flex-item-width(1, $gap);
+    }
   }
 }
 
@@ -26,6 +54,22 @@ $gap: 20px;
   border: 2px solid saddlebrown;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 150px;
+
+  @media screen and (min-width: 1280px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @media screen and (max-width: 1280px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 
   .grid-item {
     border: 2px solid darkcyan;
