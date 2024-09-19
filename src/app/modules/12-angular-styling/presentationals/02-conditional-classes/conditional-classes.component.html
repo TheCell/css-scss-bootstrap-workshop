@@ -3,7 +3,7 @@
 <br/>
 <div class="list">
   @for (item of items; track item) {
-    <div class="item">
+    <div class="item" [ngClass]="{'highlight': $index % 2 === 0 }">
       <div>{{ $index + 1 }}</div>
       <div>{{ item.name }}</div>
       <div>{{ item.city }}</div>

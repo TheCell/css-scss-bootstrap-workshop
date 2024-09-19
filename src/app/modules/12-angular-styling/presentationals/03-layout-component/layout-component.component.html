@@ -4,23 +4,23 @@
   Refactor the component and move the layout related stylings into the layout component. Apply the layout component to the <code>section</code> in this component.
 </p>
 <br/>
-<section>
-  <header class="header">
+<app-my-layout>
+  <div slot="header">
     <h1>This is a Title</h1>
     <nav class="nav">
       <a href="javascript:window.location.reload()">Home</a>
       <a href="javascript:window.location.reload()">About</a>
       <a href="javascript:window.location.reload()">Contact</a>
     </nav>
-  </header>
+  </div>
 
-  <section class="hero">
+  <div slot="hero">
     <h2>Layout Components</h2>
     <p>This is a simple hero section.</p>
     <button class="btn-primary">Click Me</button>
-  </section>
+  </div>
 
-  <footer class="footer">
+  <div slot="footer">
     <p>&copy; 2024 Layout Component Exercise. All rights reserved.</p>
-  </footer>
-</section>
+  </div>
+</app-my-layout>

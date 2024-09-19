@@ -1,3 +1,4 @@
+import { NgClass } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 type ListItem = {
@@ -9,7 +10,7 @@ type ListItem = {
 @Component({
   selector: 'app-conditional-classes',
   standalone: true,
-  imports: [],
+  imports: [NgClass],
   templateUrl: './conditional-classes.component.html',
   styleUrl: './conditional-classes.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
